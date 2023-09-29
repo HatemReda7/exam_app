@@ -141,8 +141,11 @@ positive vibes''',),
                       );
                     }) , options: CarouselOptions(disableCenter: true,enlargeFactor: 1,enlargeCenterPage: true)),
                     Row(
+                      mainAxisSize: MainAxisSize.min,
                       children: [
-
+                        Icon(Icons.circle,size: 8,),
+                        Icon(Icons.circle,size: 8),
+                        Icon(Icons.circle,size: 8,),
                       ],
                     )
                   ],
@@ -259,7 +262,6 @@ positive vibes''',),
                 ),
               ),
             ),
-
           ],
         ),
       ),
