@@ -1,3 +1,4 @@
+import 'package:exam_app/second_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 
@@ -175,88 +176,96 @@ positive vibes''',),
                         ),
                       ],
                     ),
-                    Container(
-                      child: Column(
-                        children: [
-                          Row(
-                            children: [
-                              Expanded(
-                                child: Container(
-                                  decoration: BoxDecoration(color: Colors.blueGrey[100],borderRadius: BorderRadius.circular(5)),
-                                  height: 70,
-                                  padding: EdgeInsets.all(20),
-                                  child: Row(
-                                    mainAxisAlignment: MainAxisAlignment.start,
-                                    children: [
-                                      Image.asset("assets/images/Frame.png"),
-                                      SizedBox(width: 10,),
-                                      Text("Relaxation",style: TextStyle(fontWeight: FontWeight.w500),),
-                                    ],
-                                  ),
-                                ),
+                    Row(
+                      children: [
+                        Expanded(
+                          child: InkWell(
+                            onTap: () {
+
+                            },
+                            child: Container(
+                              decoration: BoxDecoration(color: Colors.blueGrey[100],borderRadius: BorderRadius.circular(5)),
+                              height: 80,
+                              padding: EdgeInsets.all(20),
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                children: [
+                                  Image.asset("assets/images/Frame.png"),
+                                  SizedBox(width: 10,),
+                                  Text("Relaxation",style: TextStyle(fontWeight: FontWeight.w500),),
+                                ],
                               ),
-                              SizedBox(width: 30,),
-                              Expanded(
-                                child: Container(
-                                  decoration: BoxDecoration(color: Colors.pink[100],borderRadius: BorderRadius.circular(5)),
-                                  height: 70,
-                                  padding: EdgeInsets.all(20),
-                                  child: Row(
-                                    mainAxisAlignment: MainAxisAlignment.start,
-                                    children: [
-                                      Image.asset("assets/images/yoga.png"),
-                                      SizedBox(width: 10,),
-                                      Text("Meditation",style: TextStyle(fontWeight: FontWeight.w500),),
-                                    ],
-                                  ),
-                                ),
+                            ),
+                          ),
+                        ),
+                        SizedBox(width: 30,),
+                        Expanded(
+                          child: InkWell(
+                            onTap: () {
+
+                            },
+                            child: Container(
+                              decoration: BoxDecoration(color: Colors.pink[100],borderRadius: BorderRadius.circular(5)),
+                              height: 80,
+                              padding: EdgeInsets.all(20),
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                children: [
+                                  Image.asset("assets/images/yoga.png"),
+                                  SizedBox(width: 10,),
+                                  Text("Meditation",style: TextStyle(fontWeight: FontWeight.w500),),
+                                ],
                               ),
-                            ],
-                          )
-                        ],
-                      ),
+                            ),
+                          ),
+                        ),
+                      ],
                     ),
                     SizedBox(height: 20,),
-                    Container(
-                      child: Column(
-                        children: [
-                          Row(
-                            children: [
-                              Expanded(
-                                child: Container(
-                                  decoration: BoxDecoration(color: Colors.orange[100],borderRadius: BorderRadius.circular(5)),
-                                  height: 70,
-                                  padding: EdgeInsets.all(20),
-                                  child: Row(
-                                    mainAxisAlignment: MainAxisAlignment.start,
-                                    children: [
-                                      Image.asset("assets/images/breathing.png"),
-                                      SizedBox(width: 10,),
-                                      Text("Breathing",style: TextStyle(fontWeight: FontWeight.w500),),
-                                    ],
-                                  ),
-                                ),
+                    Row(
+                      children: [
+                        Expanded(
+                          child: InkWell(
+                            onTap: () {
+
+                            },
+                            child: Container(
+                              decoration: BoxDecoration(color: Colors.orange[100],borderRadius: BorderRadius.circular(5)),
+                              height: 80,
+                              padding: EdgeInsets.all(20),
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                children: [
+                                  Image.asset("assets/images/breathing.png"),
+                                  SizedBox(width: 10,),
+                                  Text("Breathing",style: TextStyle(fontWeight: FontWeight.w500),),
+                                ],
                               ),
-                              SizedBox(width: 30,),
-                              Expanded(
-                                child: Container(
-                                  decoration: BoxDecoration(color: Colors.lightBlue[100],borderRadius: BorderRadius.circular(5)),
-                                  height: 70,
-                                  padding: EdgeInsets.all(20),
-                                  child: Row(
-                                    mainAxisAlignment: MainAxisAlignment.start,
-                                    children: [
-                                      Image.asset("assets/images/yoga2.png"),
-                                      SizedBox(width: 10,),
-                                      Text("Yoga",style: TextStyle(fontWeight: FontWeight.w500),),
-                                    ],
-                                  ),
-                                ),
+                            ),
+                          ),
+                        ),
+                        SizedBox(width: 30,),
+                        Expanded(
+                          child: InkWell(
+                            onTap: () {
+                              Navigator.pushNamed(context, SecondScreen.routeName);
+                            },
+                            child: Container(
+                              decoration: BoxDecoration(color: Colors.lightBlue[100],borderRadius: BorderRadius.circular(5)),
+                              height: 80,
+                              padding: EdgeInsets.all(20),
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                children: [
+                                  Image.asset("assets/images/yoga2.png"),
+                                  SizedBox(width: 10,),
+                                  Text("Yoga",style: TextStyle(fontWeight: FontWeight.w500),),
+                                ],
                               ),
-                            ],
-                          )
-                        ],
-                      ),
+                            ),
+                          ),
+                        ),
+                      ],
                     )
                   ],
                 ),
