@@ -17,9 +17,7 @@ class SecondScreen extends StatelessWidget {
           selectedItemColor: Colors.green,
           unselectedItemColor: Colors.black,
           items: [
-            BottomNavigationBarItem(
-              icon: Icon(
-                Icons.home,
+            BottomNavigationBarItem(icon: Icon(Icons.home,
               ),
               label: "",
             ),
