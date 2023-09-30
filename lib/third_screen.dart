@@ -30,14 +30,15 @@ class ThirdScreen extends StatelessWidget {
               TextFormField(
                 decoration: InputDecoration(
                   prefixIcon: const Icon(Icons.search),
+                  prefixIconColor: Colors.grey[500],
                   hintText: "Articles, Video, Audio and More,...",
-                  hintStyle: const TextStyle(color: Colors.grey,fontSize: 16,fontWeight: FontWeight.w400,),
+                  hintStyle: TextStyle(color: Colors.grey[500],fontSize: 16,fontWeight: FontWeight.w400,),
                   border: OutlineInputBorder(borderSide: const BorderSide(width: 2,color: Colors.grey),borderRadius: BorderRadius.circular(12))
                 ),
               ),
               const SizedBox(height: 20,),
               SizedBox(
-                height: 45,
+                height: 40,
                 child: ListView(
                   scrollDirection: Axis.horizontal,
                   children: [
@@ -47,7 +48,7 @@ class ThirdScreen extends StatelessWidget {
                         style: GoogleFonts.inter(fontSize: 16,fontWeight: FontWeight.w500,color: const Color(0xff6941C6)),),
                       selected: true,
                       selectedColor: const Color(0xffF4EBFF),
-                      avatarBorder: const OutlineInputBorder(borderSide: BorderSide(width: 2,color: Color(0xff6941C6))),
+                      avatarBorder: const OutlineInputBorder(borderSide: BorderSide(width: 2,color: Color(0xffD6BBFB))),
                       selectedShadowColor: Colors.transparent,
                       color: const MaterialStatePropertyAll(Color(0xff6941C6)),
                     ),
@@ -149,7 +150,7 @@ expert insights''',style: GoogleFonts.inter(fontSize: 14,fontWeight: FontWeight.
                   )
                 ],
               ),
-              const SizedBox(height: 10,),
+              const SizedBox(height: 15,),
               Row(
                 children: [
                   const Text("Cycle Phases and Period",style: TextStyle(fontSize: 18,fontWeight: FontWeight.w600),),
