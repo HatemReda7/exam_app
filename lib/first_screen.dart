@@ -23,7 +23,7 @@ class _FirstScreenState extends State<FirstScreen> {
                child: Row(
                 children: [
                   Image.asset("assets/images/logo.png"),
-                  SizedBox(width: 5,),
+                  SizedBox(width: 10,),
                   Text(
                     "Moody",
                     style: TextStyle(
@@ -86,71 +86,68 @@ class _FirstScreenState extends State<FirstScreen> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 15),
-              child: Container(
-                child: Column(
-                  children: [
-                    Row(
-                      children: [
-                        Text("Feature",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
-                        Spacer(),
-                        Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 10),
-                          child: TextButton(onPressed: () {},
-                              child: Row(
-                                children: [
-                                  Text("see more",style: TextStyle(color: Colors.green),),
-                                  SizedBox(width: 5,),
-                                  Icon(Icons.arrow_forward_ios,size: 16,color: Colors.green,)
-                                ],
-                              )),
-                        ),
-                      ],
-                    ),
-                    CarouselSlider(items: List.generate(3, (index) {
-                      return Container(
-                        padding: EdgeInsets.symmetric(vertical: 15),
-                        width: 300,
-                        height: 100,
-                        decoration: BoxDecoration(
-                            color: Colors.green[100],
-                            image: DecorationImage(
-                                image: AssetImage("assets/images/Walking the Dog.png"),
-                                alignment: Alignment.centerRight,
+              padding: const EdgeInsets.symmetric(horizontal: 10),
+              child: Column(
+                children: [
+                  Row(
+                    children: [
+                      Text("Feature",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
+                      Spacer(),
+                      Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 10),
+                        child: TextButton(onPressed: () {},
+                            child: Row(
+                              children: [
+                                Text("see more",style: TextStyle(color: Colors.green),),
+                                SizedBox(width: 5,),
+                                Icon(Icons.arrow_forward_ios,size: 16,color: Colors.green,)
+                              ],
+                            )),
+                      ),
+                    ],
+                  ),
+                  CarouselSlider(items: List.generate(3, (index) {
+                    return Container(
+                      padding: EdgeInsets.symmetric(vertical: 15),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                          color: Color(0xffECFDF3),
+                          image: DecorationImage(
+                              image: AssetImage("assets/images/Walking the Dog.png"),
+                              alignment: Alignment.centerRight,
 
-                            )
-                        ),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text("Positive vibes",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15),),
-                            SizedBox(height: 10,),
-                            Text('''Boost your mood with
-positive vibes''',),
-                            Padding(
-                              padding: const EdgeInsets.symmetric(vertical: 15),
-                              child: Row(
-                                children: [
-                                  Icon(Icons.play_circle,),
-                                  SizedBox(width: 5,),
-                                  Text("10  mins")
-                                ],
-                              ),
-                            )
-                          ],
-                        ),
-                      );
-                    }) , options: CarouselOptions(disableCenter: true,enlargeFactor: 1,enlargeCenterPage: true)),
-                    Row(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        Icon(Icons.circle,size: 8,),
-                        Icon(Icons.circle,size: 8),
-                        Icon(Icons.circle,size: 8,),
-                      ],
-                    )
-                  ],
-                ),
+                          )
+                      ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text("Positive vibes",style: TextStyle(fontWeight: FontWeight.w600,fontSize: 16,color: Colors.grey[700]),),
+                          SizedBox(height: 10,),
+                          Text('''Boost your mood with
+positive vibes''',style: TextStyle(fontSize: 16),),
+                          Padding(
+                            padding: const EdgeInsets.symmetric(vertical: 15),
+                            child: Row(
+                              children: [
+                                Icon(Icons.play_circle,color: Color(0xff32D583),),
+                                SizedBox(width: 5,),
+                                Text("10  mins")
+                              ],
+                            ),
+                          )
+                        ],
+                      ),
+                    );
+                  }) , options: CarouselOptions(disableCenter: true,enlargeFactor: 1,enlargeCenterPage: true)),
+                  Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Icon(Icons.circle,size: 8,),
+                      Icon(Icons.circle,size: 8),
+                      Icon(Icons.circle,size: 8,),
+                    ],
+                  )
+                ],
               ),
             ),
             Padding(
@@ -184,7 +181,7 @@ positive vibes''',),
 
                             },
                             child: Container(
-                              decoration: BoxDecoration(color: Colors.blueGrey[100],borderRadius: BorderRadius.circular(5)),
+                              decoration: BoxDecoration(color: Colors.purple[50],borderRadius: BorderRadius.circular(5)),
                               height: 80,
                               padding: EdgeInsets.all(20),
                               child: Row(
@@ -205,13 +202,13 @@ positive vibes''',),
 
                             },
                             child: Container(
-                              decoration: BoxDecoration(color: Colors.pink[100],borderRadius: BorderRadius.circular(5)),
+                              decoration: BoxDecoration(color: Colors.pink[50],borderRadius: BorderRadius.circular(5)),
                               height: 80,
                               padding: EdgeInsets.all(20),
                               child: Row(
                                 mainAxisAlignment: MainAxisAlignment.start,
                                 children: [
-                                  Image.asset("assets/images/yoga.png"),
+                                  ImageIcon(AssetImage("assets/images/Vector.png"),color: Colors.pink[300],),
                                   SizedBox(width: 10,),
                                   Text("Meditation",style: TextStyle(fontWeight: FontWeight.w500),),
                                 ],
@@ -230,13 +227,13 @@ positive vibes''',),
 
                             },
                             child: Container(
-                              decoration: BoxDecoration(color: Colors.orange[100],borderRadius: BorderRadius.circular(5)),
+                              decoration: BoxDecoration(color: Colors.orange[50],borderRadius: BorderRadius.circular(5)),
                               height: 80,
                               padding: EdgeInsets.all(20),
                               child: Row(
                                 mainAxisAlignment: MainAxisAlignment.start,
                                 children: [
-                                  Image.asset("assets/images/breathing.png"),
+                                  ImageIcon(AssetImage("assets/images/breathing.png"),color: Colors.orange),
                                   SizedBox(width: 10,),
                                   Text("Breathing",style: TextStyle(fontWeight: FontWeight.w500),),
                                 ],
@@ -251,7 +248,7 @@ positive vibes''',),
                               Navigator.pushNamed(context, SecondScreen.routeName);
                             },
                             child: Container(
-                              decoration: BoxDecoration(color: Colors.lightBlue[100],borderRadius: BorderRadius.circular(5)),
+                              decoration: BoxDecoration(color: Colors.lightBlue[50],borderRadius: BorderRadius.circular(5)),
                               height: 80,
                               padding: EdgeInsets.all(20),
                               child: Row(
