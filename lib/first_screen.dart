@@ -1,4 +1,5 @@
 import 'package:exam_app/second_screen.dart';
+import 'package:exam_app/third_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 
@@ -275,18 +276,15 @@ positive vibes''',style: TextStyle(fontSize: 16),),
           currentIndex: 0,
           selectedItemColor: Colors.green,
           unselectedItemColor: Colors.black,
-          items: const [
-             BottomNavigationBarItem(
-              icon: Icon(
-                Icons.home,
-              ),
-              label: "",
-            ),
-             BottomNavigationBarItem(
-                icon: Icon(Icons.grid_view_outlined), label: ""),
-             BottomNavigationBarItem(
-                icon: Icon(Icons.calendar_today_outlined), label: ""),
-             BottomNavigationBarItem(icon: Icon(Icons.person), label: ""),
+          items: [
+             const BottomNavigationBarItem(icon: Icon(Icons.home,), label: "",),
+             BottomNavigationBarItem(icon: InkWell(
+                 onTap: () {
+                   Navigator.pushNamed(context, ThirdScreen.routeName);
+                 },
+                 child: const Icon(Icons.grid_view_outlined)), label: "",),
+             const BottomNavigationBarItem(icon: Icon(Icons.calendar_today_outlined), label: ""),
+             const BottomNavigationBarItem(icon: Icon(Icons.person), label: ""),
           ]),
     );
   }
