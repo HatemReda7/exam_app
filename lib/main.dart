@@ -16,9 +16,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       initialRoute: FirstScreen.routeName,
       routes: {
-        FirstScreen.routeName : (context) => FirstScreen(),
-        SecondScreen.routeName : (context) => SecondScreen(),
-        ThirdScreen.routeName : (context) => ThirdScreen(),
+        FirstScreen.routeName : (context) => const FirstScreen(),
+        SecondScreen.routeName : (context) => const SecondScreen(),
+        ThirdScreen.routeName : (context) => const ThirdScreen(),
       },
     );
   }
